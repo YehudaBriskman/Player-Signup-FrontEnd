@@ -75,7 +75,7 @@ const PlayerAbilitys = () => {
   };
 
   return (
-    <>
+    <div className='pb-8'>
       <Loading on={isSubmitting} />
       <div className="max-w-sm mx-auto mt-8 bg-gradient-to-r from-slate-300 via-slate-400 to-slate-500 rounded-lg text-black">
         <form onSubmit={handleSubmit(signup)} className=" shadow-md rounded px-8 pt-6 pb-3 mb-4 items-center">
@@ -148,7 +148,7 @@ const PlayerAbilitys = () => {
           {errors.error && <span className='text-red-600'>{errors.error.message}</span>}
         </form>
       </div>
-    </>
+    </div>
   );
 };
 

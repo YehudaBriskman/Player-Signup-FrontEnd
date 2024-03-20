@@ -62,15 +62,14 @@ const PlayerLevelAbilitys = () => {
 
 
   return (
-    <div>
+    <div className='pb-8'>
       <Loading on={isSubmitting} />
-      <div className="max-w-lg mx-auto mt-8 p-8 bg-gradient-to-r from-slate-300 via-slate-400 to-slate-500 rounded-lg shadow-md text-center">
+      <div className="max-w-lg mx-auto mt-8 p-8 pb-0 bg-gradient-to-r from-slate-300 via-slate-400 to-slate-500 rounded-lg shadow-md text-center">
         <h2 className="text-2xl font-semibold mb-8 text-black">Player Abilitys Level</h2>
-        <form className="text-black shadow-md rounded px-8 pt-6 pb-3 mb-4 items-center" onSubmit={handleSubmit(signup)}>
+        <form className="text-black rounded px-8 py-6 mb-7 items-center" onSubmit={handleSubmit(signup)}>
           <h2>Please choose abilitys to upgrade</h2>
           <h3>Points Left: {updatePoints}</h3>
-          <div className='w-[100%] flex flex-wrap justify-around p-6'>
-
+          <div className='w-[100%] flex flex-wrap justify-around p-6 pb-2 shadow-md'>
             <div className="mb-4 flex justify-between w-[100%] max-h-[30%]" >
               <div className="mb-4 pb-1 px-2 border-b-2 border-black shadow-md rounded max-w-[45%] h-[100%] flex items-center justify-between">
                 <label htmlFor="ability1Level" className="block text-gray-700 font-bold text-md mb-2 pe-2 pt-1" >
@@ -170,12 +169,13 @@ const PlayerLevelAbilitys = () => {
           </div>
           <button
             type="submit"
-            className="py-3 px-9 mb-2 border-b-2 border-black text-xl bg-gradient-to-r from-slate-400 via-gray-400 to-slate-400 shadow-lg text-black hover:scale-110 transition duration-300 ease-in-out font-bold rounded-lg focus:shadow-outline"
+            className="py-3 px-9 mb-2 mt-8 border-b-2 border-black text-xl bg-gradient-to-r from-slate-400 via-gray-400 to-slate-400 shadow-lg text-black hover:scale-110 transition duration-300 ease-in-out font-bold rounded-lg focus:shadow-outline"
           >
             Next
           </button>
           {errors.error && <span className='text-red-600'>{errors.error.message}</span>}
         </form>
+        
       </div>
     </div>
   )
