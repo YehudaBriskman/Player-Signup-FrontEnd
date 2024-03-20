@@ -1,10 +1,7 @@
 import React, { useContext } from 'react'
-import { Outlet, Route, Routes } from 'react-router-dom'
-import Home from '../components/Home'
-import Navbar from '../components/Navbar'
-import Signup from '../components/Signup'
-import Login from '../components/Login'
-import Deleteacount from '../components/Deleteacount'
+import { Route, Routes } from 'react-router-dom'
+import Home from '../Components/Home'
+import Navbar from '../Components/Navbar'
 import PlayerLogin from '../Components/players/PlayerLogin'
 import PlayerSignup from '../Components/players/PlayerSignup'
 import PlayerAbilitys from '../Components/players/PlayerAbilitys'
@@ -19,9 +16,6 @@ const AppRoutes = () => {
         <Routes>
             <Route path='/' element={<Navbar />}>
                 <Route path='/' element={<Home />} />
-                <Route path='/signup' element={<Signup />} />
-                <Route path='/login' element={<Login />} />
-                <Route path='/deleteacount' element={<Deleteacount />} />
                 <Route path='/playerSignup' element={<PlayerSignup/>} />
                 <Route path='/playerAbilitys' element={<PlayerAbilitys/>} />
                 <Route path='/playerLevelAbilitys' element={<PlayerLevelAbilitys/>}/>

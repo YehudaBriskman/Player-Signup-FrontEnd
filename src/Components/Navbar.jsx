@@ -3,22 +3,19 @@ import { Link, Outlet } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <>
-            <header className='bg-gradient-to-r from-blue-500 to-purple-500 '>
-                <nav className='p-4 d-flex justify-content-end'>
+        <div className='min-h-[100vh] bg-gradient-to-r from-slate-300 via-slate-400 to-slate-500 rounded-lg text-black'>
+            <header className='pb-6'>
+                <nav className='bg-slate-900 p-4 d-flex justify-content-end'>
                     <div className='p-4 d-flex ms-auto'>
                         <Link className='text-white mx-3' to="/">HOME</Link>
-                        <Link className='text-white mx-3' to="/signup">SIGNUP</Link>
-                        <Link className='text-white mx-3' to="/login">LOGIN</Link>
-                        <Link className='text-white mx-3' to="/deleteacount">DELETE ACOUNT</Link>
                         <Link className='text-white mx-3' to="/playerSignup">PLAYERS</Link>
                     </div>
                 </nav>
             </header>
-            <div className='bg-gradient-to-r from-black via-slate-800 to-gray-500 text-white p-4 px-8'>
+            <div className='px-4'>
                 <Outlet />
             </div>
-        </>
+        </div>
     )
 }
 

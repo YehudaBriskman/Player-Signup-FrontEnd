@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import { endPlayerValidation } from '../../validations/playerValidation'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { REGISTER_PLAYER_URL } from '../../routes/urls'
+import { REGISTER_PLAYER_URL } from '../../Routes/urls'
 import Loading from '../../shared/Loading'
 
 
