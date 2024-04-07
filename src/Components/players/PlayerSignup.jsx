@@ -15,7 +15,6 @@ const PlayerSignup = () => {
         reValidateMode: "onChange"
     });
 
-    //              !!!Player לזכור להעביר את זה ואת הגט אקסיוס סטטוס לקומפוננטה האחרונה שמציגה את ה 
 
     const nav = useNavigate()
     const signup = async (data) => {
